@@ -507,6 +507,43 @@ ACERCA DE
 }
 
 /* ======================================
+ACERCA DE
+====================================== */
+
+.contact-title {
+    margin-bottom: 25px !important;
+}
+
+.contact-title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 670;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.contact-title p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-size: 17px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        margin: 50px 17px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-title h2 {
+        font-size: 32px;
+    }
+}
+
+/* ======================================
 FOOTER
 ====================================== */
 footer {
