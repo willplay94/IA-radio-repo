@@ -1,0 +1,11 @@
+nav .bg-dark {
+    background-color: nth($list: $colors, $n: 1) !important;
+
+    .navbar-justify {
+        justify-content: flex-end;
+    }
+
+    .navbar-text-font {
+        @include font(nth($list: $fonts, $n: 1), 16px, 500, 1)
+    }
+}

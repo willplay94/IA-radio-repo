@@ -1,0 +1,77 @@
+//*? HERO SECTION =====================================================
+.hero {
+    background-color: nth($list: $colors, $n: 1);
+    padding: 10px;
+    padding-top: 140px;
+    height: 800px;
+    text-align: center;
+    background-image: url(../img/IA-radio-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        @include font(nth($list: $fonts, $n: 2), 75px, bold, 0.9);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+    }
+
+    p {
+        @include font(nth($list: $fonts, $n: 1), 30px, bold, 1);
+        text-align: center;
+        color: nth($list: $colors, $n: 2)
+    }
+}
+
+//*? PROYECT SECTION =====================================================
+
+.proyecto {
+    text-align: center;
+    padding: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin: 50px;
+    margin-top: 80px;
+
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        color: nth($list: $colors, $n: 2);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        p {
+            @include font(nth($list: $fonts, $n: 1), 27px, 200px, 1);
+            color: nth($list: $colors, $n: 2);
+        }
+    }
+}
+
+//*? DJ IA SECTION =======================================================
+
+.dj-ia {
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include font(nth($list: $fonts, $n: 1), 27px, 200, 1);
+        color: nth($list: $colors, $n: 2);
+        margin-bottom: 60px;
+    }
+
+    .ia-generative-dj {
+        img {}
+    }
+
+    h3 {}
+}

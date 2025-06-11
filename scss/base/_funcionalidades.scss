@@ -1,0 +1,20 @@
+//*? MAIN COLOR LIST
+$colors:#000000, #ffffff, #0b5ed7;
+
+//*? MAIN FONT LIST
+$fonts: "Montserrat", "Zen Dots"; 
+
+//*? FONTS MIXIN
+@mixin font ($family, $size, $weight, $line-height){
+    font-family: $family, sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+//*? FLEX MIXIN
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $justify;
+    align-items: $align;
+}
