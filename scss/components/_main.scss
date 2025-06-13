@@ -43,7 +43,7 @@
         margin-bottom: 20px;
 
         p {
-            @include font(nth($list: $fonts, $n: 1), 27px, 200px, 1);
+            @include font(nth($list: $fonts, $n: 1), 27px, 200, 1);
             color: nth($list: $colors, $n: 2);
         }
     }
@@ -70,8 +70,31 @@
     }
 
     .ia-generative-dj {
-        img {}
+        img {
+            margin-bottom: 20px;
+        }
     }
 
-    h3 {}
+    .container .d-flex .justify-content-center {
+        .row {
+            .card {
+                background-color: nth($list: $colors, $n: 4);
+
+                .card-text {
+                    @include font(nth($list: $fonts, $n: 1), 18px, 200, 1 !important);
+                }
+            }
+        }
+    }
+
+    h3 {
+        @include font(nth($list: $fonts, $n: 1), 30px, 200, 1);
+        margin-top: 40px;
+    }
+
+    a {
+        .bi .bi-instagram {
+            @include font(nth($list: $fonts, $n: 1), 30px, 200, 1);
+        }
+    }
 }
