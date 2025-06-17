@@ -98,3 +98,48 @@
         }
     }
 }
+
+//*? RADIO SECTION =======================================================
+
+.radio-section {
+    text-align: center;
+    padding: 60px 10px;
+
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .radio-container {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        gap: 10px;
+
+        .radio-item {
+            width: 100%;
+            margin: 7px;
+
+            .placeholder-image {
+                width: 100%;
+                height: 200px;
+                background-color: nth($list: $colors, $n: 2);
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            h3 {
+                @include font(nth($list: $fonts, $n: 1), 25px, 670, 1);
+                color: nth($list: $colors, $n: 2);
+                margin-bottom: 10px;
+            }
+
+            p {
+                @include font(nth($list: $fonts, $n: 1), 18px, 200, 1);
+                color: nth($list: $colors, $n: 2);
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
