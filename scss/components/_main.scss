@@ -143,3 +143,39 @@
         }
     }
 }
+
+//*? ACERCA DE ============================================================
+
+.about-text {
+    margin: 250px 100px;
+    text-align: center;
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        color: nth($list: $colors, $n: 2);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    p {
+        @include font(nth($list: $fonts, $n: 1), 20px, 60, 1);
+        color: nth($list: $colors, $n: 2);
+        margin-bottom: 60px;
+    }
+}
+
+//*? CONTACTANOS ============================================================
+
+.contact-title {
+    margin-bottom: 25px !important;
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 40px, 670, 1);
+        color: nth($list: $colors, $n: 2);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include font(nth($list: $fonts, $n: 1), 17px, 670, 1.2);
+        color: nth($list: $colors, $n: 2);
+        margin-right: 20px;
+    }
+}

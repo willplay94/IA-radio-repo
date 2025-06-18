@@ -220,3 +220,88 @@
         }
     }
 }
+
+@media (max-width: 950px) {
+    .radio-section {
+        margin: 60px;
+        padding: 60px 50px;
+
+        .radio-container {
+            flex-direction: column;
+            align-items: center;
+
+            .radio-item {
+                .placeholder-image {
+                    width: 100%;
+                    height: 350px;
+                    background-color: nth($list: $colors, $n: 2);
+                    margin-bottom: 30px;
+                    border-radius: 10px;
+                }
+
+                h3 {
+                    @include font(nth($list: $fonts, $n: 1), 35px, 670, 1);
+                }
+
+                p {
+                    @include font(nth($list: $fonts, $n: 1), 25px, 200, 1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .radio-section {
+        margin: 20px;
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .radio-section {
+        margin: 10px;
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .radio-section {
+        margin: 8px;
+        padding: 60px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-text {
+        margin: 250px 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-text {
+        margin: 250px 100px;
+
+        h2 {
+            @include font(nth($list: $fonts, $n: 1), 35px, 670, 1);
+        }
+
+        p {
+            @include font(nth($list: $fonts, $n: 1), 18px, 60, 1);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        margin: 50px 17px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-title {
+        h2 {
+            @include font(nth($list: $fonts, $n: 1), 32px, 670, 1);
+        }
+    }
+}
