@@ -1,0 +1,54 @@
+footer {
+    padding: 20px;
+    border-top: 1px solid #ffffff7e;
+
+    .footer-top {
+        @include flex (row, space-between, center);
+        max-width: 1200px;
+        height: 100px;
+
+        .logo-footer {
+            height: 80px;
+            margin: 20px;
+        }
+
+        .social-icons {
+            @include flex (row, center, center);
+
+            a {
+                padding: 10px;
+            }
+        }
+    }
+
+    .footer-links {
+        ul {
+            @include grid (repeat(4, 1fr), flex-start, 10px);
+            @include font (nth($list: $fonts, $n: 1), 16px, bold, 1);
+            color: nth($list: $colors, $n: 2);
+            margin-bottom: 20px;
+            text-align: left;
+            padding-left: 0;
+            margin: 20px 0px 10px 20px;
+
+            li {
+                text-align: left;
+                padding: 5px 5px 5px 0;
+                margin: 0;
+                line-height: 1;
+                color: nth($list: $colors, $n: 2);
+            }
+
+            a {
+                color: nth($list: $colors, $n: 2);
+            }
+        }
+    }
+
+    .footer-copyright {
+        @include font (nth($list: $fonts, $n: 1), 15px, 100, 1);
+        color: nth($list: $colors, $n: 2);
+        padding: 0px;
+        margin-left: 20px;
+    }
+}
