@@ -1,7 +1,21 @@
-/* Fuente Zen Dots */
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
-/* Fuente Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.dj-ia h2, .proyecto h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 670;
+  line-height: 1;
+}
+
+.dj-ia p, .proyecto p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+/* Fuente Zen Dots */
+/* Fuente Montserrat */
 * {
   padding: 0;
   margin: 0;
@@ -28,13 +42,13 @@ ul {
   height: 150px;
 }
 
-nav .bg-dark {
+.bg-dark {
   background-color: #000000 !important;
 }
-nav .bg-dark .navbar-justify {
+.bg-dark .navbar-justify {
   justify-content: flex-end;
 }
-nav .bg-dark .navbar-text-font {
+.bg-dark .navbar-text-font {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -81,19 +95,11 @@ nav .bg-dark .navbar-text-font {
   margin-top: 80px;
 }
 .proyecto h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 45px;
-  font-weight: 670;
-  line-height: 1;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.proyecto h2 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
-  font-weight: 200;
-  line-height: 1;
+.proyecto p {
   color: #ffffff;
 }
 
@@ -104,45 +110,37 @@ nav .bg-dark .navbar-text-font {
   text-align: center;
 }
 .dj-ia h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 45px;
-  font-weight: 670;
-  line-height: 1;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .dj-ia p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
-  font-weight: 200;
-  line-height: 1;
   color: #ffffff;
   margin-bottom: 60px;
 }
 .dj-ia .ia-generative-dj img {
   margin-bottom: 20px;
 }
-.dj-ia .container .d-flex .justify-content-center .row .card {
+.dj-ia .card {
   background-color: rgb(36, 36, 36);
 }
-.dj-ia .container .d-flex .justify-content-center .row .card .card-text {
+.dj-ia .card .card-body {
+  padding: 14px !important;
+}
+.dj-ia .card .card-body .card-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 17px !important;
   font-weight: 200;
-  line-height: 1 !important;
+  line-height: 1;
 }
 .dj-ia h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1;
   margin-top: 40px;
 }
-.dj-ia a .bi .bi-instagram {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: 200;
-  line-height: 1;
+.dj-ia a .bi.bi-instagram {
+  font-size: 60px;
 }
 
 .radio-section {
@@ -249,6 +247,10 @@ footer .footer-top {
 footer .footer-top .logo-footer {
   height: 80px;
   margin: 20px;
+}
+footer .footer-top .logo-footer img {
+  height: 96px;
+  width: auto;
 }
 footer .footer-top .social-icons {
   display: flex;

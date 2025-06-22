@@ -27,3 +27,19 @@ $fonts: "Montserrat", "Zen Dots";
     justify-content: $justify;
     gap: $gap;
 }
+
+//*? TITTLE EXTEND
+%tittle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 670;
+    line-height: 1;
+}
+
+//*? TEXT EXTEND
+%text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 1;
+}

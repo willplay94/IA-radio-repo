@@ -37,15 +37,15 @@
     margin-top: 80px;
 
     h2 {
-        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        @extend %tittle;
         color: nth($list: $colors, $n: 2);
         text-transform: uppercase;
         margin-bottom: 20px;
+    }
 
-        p {
-            @include font(nth($list: $fonts, $n: 1), 27px, 200, 1);
-            color: nth($list: $colors, $n: 2);
-        }
+    p {
+        @extend %text;
+        color: nth($list: $colors, $n: 2);
     }
 }
 
@@ -58,13 +58,13 @@
     text-align: center;
 
     h2 {
-        @include font(nth($list: $fonts, $n: 1), 45px, 670, 1);
+        @extend %tittle;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
 
     p {
-        @include font(nth($list: $fonts, $n: 1), 27px, 200, 1);
+        @extend %text;
         color: nth($list: $colors, $n: 2);
         margin-bottom: 60px;
     }
@@ -75,26 +75,25 @@
         }
     }
 
-    .container .d-flex .justify-content-center {
-        .row {
-            .card {
-                background-color: nth($list: $colors, $n: 4);
+    .card {
+        background-color: nth($list: $colors, $n: 4);
 
-                .card-text {
-                    @include font(nth($list: $fonts, $n: 1), 18px, 200, 1 !important);
-                }
+        .card-body {
+            padding: 14px !important;
+            .card-text {
+                @include font(nth($list: $fonts, $n: 1), 17px !important, 200, 1);
             }
         }
     }
 
     h3 {
-        @include font(nth($list: $fonts, $n: 1), 30px, 200, 1);
+        @include font(nth($list: $fonts, $n: 1), 30px, 500, 1);
         margin-top: 40px;
     }
 
     a {
-        .bi .bi-instagram {
-            @include font(nth($list: $fonts, $n: 1), 30px, 200, 1);
+        .bi.bi-instagram {
+            font-size: 60px;
         }
     }
 }
