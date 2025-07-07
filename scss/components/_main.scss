@@ -22,6 +22,15 @@
         text-align: center;
         color: nth($list: $colors, $n: 2)
     }
+
+    .hero-buttons {
+        margin-top: 280px;
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 18px;
+        }
+    }
 }
 
 //*? PROYECT SECTION ========================================================
@@ -80,6 +89,7 @@
 
         .card-body {
             padding: 14px !important;
+
             .card-text {
                 @include font(nth($list: $fonts, $n: 1), 17px !important, 200, 1);
             }
@@ -91,9 +101,14 @@
         margin-top: 40px;
     }
 
-    a {
+    .instagram-link {
         .bi.bi-instagram {
             font-size: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover .bi.bi-instagram {
+            color: nth($list: $colors, $n: 3) !important;
         }
     }
 }
@@ -115,6 +130,7 @@
         justify-content: center;
         max-width: 1200px;
         gap: 10px;
+        margin: 0 auto;
 
         .radio-item {
             width: 100%;
@@ -123,9 +139,14 @@
             .placeholder-image {
                 width: 100%;
                 height: 200px;
-                background-color: nth($list: $colors, $n: 2);
+                background-color: nth($list: $colors, $n: 1);
                 margin-bottom: 20px;
-                border-radius: 10px;
+                border-radius: 6px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 6px;
+                }
             }
 
             h3 {
@@ -146,7 +167,7 @@
 //*? ACERCA DE ===============================================================
 
 .about-text {
-    margin: 250px 100px;
+    margin: 100px 100px;
     text-align: center;
 
     h2 {
@@ -160,6 +181,20 @@
         @include font(nth($list: $fonts, $n: 1), 20px, 60, 1);
         color: nth($list: $colors, $n: 2);
         margin-bottom: 60px;
+    }
+
+    .placeholder-image {
+        width: 100%;
+        height: 450px;
+        background-color: nth($list: $colors, $n: 1);
+        margin-bottom: 50px;
+        border-radius: 6px;
+
+        img {
+            width: auto;
+            height: 100%;
+            border-radius: 6px;
+        }
     }
 }
 
@@ -179,5 +214,246 @@
         @include font(nth($list: $fonts, $n: 1), 17px, 670, 1.2);
         color: nth($list: $colors, $n: 2);
         margin-right: 20px;
+    }
+}
+
+//*? RADIO EN VIVO  ============================================================
+
+.song-text {
+    margin: 60px 0 15px 0;
+
+    .placeholder-image-player {
+        width: 270px;
+        height: 270px;
+        margin: 20px auto;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 35px, 700, 1);
+    }
+
+    h3 {
+        @include font(nth($list: $fonts, $n: 1), 25px, 400, 1);
+    }
+
+    h4 {
+        @include font(nth($list: $fonts, $n: 1), 23px, 400, 1);
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.stream-player {
+    background-color: nth($list: $colors, $n: 4);
+    width: 500px;
+    height: 200px;
+    padding: 40px;
+    margin: 20px auto 90px auto;
+    border-radius: 8px;
+
+    .player-progress {
+        span {
+            @include font(nth($list: $fonts, $n: 1), 15px, 200, 1);
+            color: nth($list: $colors, $n: 2);
+            margin: 0 10px;
+        }
+
+        .progress-bar {
+            margin-top: 5px;
+            height: 3px;
+            background: nth($list: $colors, $n: 2);
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 300px;
+        }
+    }
+
+    .player-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+
+        .btn-prev {
+            background-color: nth($list: $colors, $n: 4);
+            border: 1px solid nth($list: $colors, $n: 2);
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: nth($list: $colors, $n: 2);
+        }
+
+        .btn-next {
+            background-color: nth($list: $colors, $n: 4);
+            border: 1px solid nth($list: $colors, $n: 2);
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: nth($list: $colors, $n: 2);
+        }
+
+        .btn-play-pause {
+            width: 70px;
+            height: 70px;
+            background-color: nth($list: $colors, $n: 5);
+            border: 1px solid nth($list: $colors, $n: 4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: nth($list: $colors, $n: 2);
+
+            i {
+                font-size: 35px;
+                margin-left: 5px;
+            }
+        }
+
+        .btn-repeat {
+            background-color: nth($list: $colors, $n: 4);
+            border: 1px solid nth($list: $colors, $n: 4);
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: nth($list: $colors, $n: 2);
+        }
+
+        .btn-shuffle {
+            background-color: nth($list: $colors, $n: 4);
+            border: 1px solid nth($list: $colors, $n: 4);
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: nth($list: $colors, $n: 2);
+        }
+    }
+}
+
+//*? RADIO PERSONALIZADA  ============================================================
+
+.nav-section-radio-personalizada {
+    .nav {
+        margin: 20px 0;
+
+        .nav-item {
+            .nav-link {
+                @include font(nth($list: $fonts, $n: 1), 16px, 500, 1);
+                color: nth($list: $colors, $n: 2);
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: nth($list: $colors, $n: 3) !important;
+                }
+            }
+        }
+    }
+}
+
+.greetings-text {
+    margin-top: 180px;
+
+    h2 {
+        @include font(nth($list: $fonts, $n: 1), 40px, 670, 1);
+        text-align: center;
+    }
+
+    p {
+        @include font(nth($list: $fonts, $n: 1), 18px, 200, 1.2);
+        text-align: center;
+    }
+}
+
+.chat-radio-personalizada {
+    background-color: nth($list: $colors, $n: 4);
+    padding: 17px 15px 15px 15px;
+    margin: 50px 80px 350px 80px;
+    border-radius: 10px;
+
+    .chat-input-container {
+        height: 35px;
+        width: auto;
+        .chat-text-input {
+            background-color: nth($list: $colors, $n: 4);
+            color: nth($list: $colors, $n: 2);
+            width: 100%;
+            border: none;
+        }
+    }
+
+    .chat-parameter-container {
+        align-items: end;
+        height: 47px;
+
+        .btn-add {
+            height: 35px;
+            width: 35px;
+            background-color: nth($list: $colors, $n: 4);
+            color: nth($list: $colors, $n: 2);
+            border: 1px solid nth($list: $colors, $n: 2);
+            border-radius: 50px;
+            padding-top: 2px;
+            margin-bottom: 1px;
+        }
+
+        .form-select-container {
+            .form-select {
+                background-color: nth($list: $colors, $n: 4) !important;
+                color: nth($list: $colors, $n: 2);
+                border: 1px solid nth($list: $colors, $n: 2);
+                border-radius: 8px;
+                padding: 8px 12px;
+                margin-left: 10px;
+                height: 35px;
+                width: 175px;
+                @include font(nth($list: $fonts, $n: 1), 14px, 400, 1);
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: right 8px center;
+                background-size: 16px 12px;
+            }
+        }
+
+        .btn-send {
+            background-color: nth($list: $colors, $n: 2);
+            color: nth($list: $colors, $n: 4);
+            border: none;
+            border-radius: 50px;
+            height: 35px;
+            width: 35px;
+            margin-left: auto;
+            display: block;
+        }
     }
 }
