@@ -24,11 +24,16 @@
     }
 
     .hero-buttons {
-        margin-top: 280px;
+        margin-top: 16px;
 
-        .btn {
+        .btn-primary {
             padding: 12px 24px;
             font-size: 18px;
+            background-color: nth($list: $colors, $n: 1) !important;
+
+            &:hover {
+                background-color: nth($list: $colors, $n: 3) !important;
+            }
         }
     }
 }
@@ -142,6 +147,7 @@
                 background-color: nth($list: $colors, $n: 1);
                 margin-bottom: 20px;
                 border-radius: 6px;
+
                 img {
                     width: 100%;
                     height: auto;
@@ -398,12 +404,13 @@
 .chat-radio-personalizada {
     background-color: nth($list: $colors, $n: 4);
     padding: 17px 15px 15px 15px;
-    margin: 50px 80px 350px 80px;
+    margin: 50px 190px 350px 190px;
     border-radius: 10px;
 
     .chat-input-container {
         height: 35px;
         width: auto;
+
         .chat-text-input {
             background-color: nth($list: $colors, $n: 4);
             color: nth($list: $colors, $n: 2);

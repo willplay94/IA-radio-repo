@@ -84,11 +84,15 @@ ul {
   color: #ffffff;
 }
 .hero .hero-buttons {
-  margin-top: 280px;
+  margin-top: 16px;
 }
-.hero .hero-buttons .btn {
+.hero .hero-buttons .btn-primary {
   padding: 12px 24px;
   font-size: 18px;
+  background-color: #000000 !important;
+}
+.hero .hero-buttons .btn-primary:hover {
+  background-color: #0b5ed7 !important;
 }
 
 .proyecto {
@@ -434,7 +438,7 @@ ul {
 .chat-radio-personalizada {
   background-color: rgb(36, 36, 36);
   padding: 17px 15px 15px 15px;
-  margin: 50px 80px 350px 80px;
+  margin: 50px 190px 350px 190px;
   border-radius: 10px;
 }
 .chat-radio-personalizada .chat-input-container {
@@ -613,22 +617,49 @@ footer .footer-copyright {
 }
 @media (max-width: 430px) {
   .hero {
-    height: 460px;
     padding-top: 80px;
-    height: 660px;
+    height: 580px;
+  }
+  .hero h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 0.9;
+    margin-top: 35px;
+  }
+  .hero p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding-top: 80px;
+    height: 500px;
   }
   .hero h1 {
     font-family: "Zen Dots", sans-serif;
     font-size: 35px;
     font-weight: bold;
     line-height: 0.9;
-    margin-top: 15px;
+    margin-top: 26px;
   }
   .hero p {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     line-height: 1;
+  }
+  .hero-buttons {
+    margin-top: 15px;
+  }
+  .hero-buttons .btn-primary {
+    width: 160px !important;
+    height: auto !important;
+    padding: 8px 8px !important;
+    font-size: 15px !important;
   }
 }
 @media (max-width: 745px) {
@@ -819,6 +850,14 @@ footer .footer-copyright {
     margin: 10px;
     padding: 60px 15px;
   }
+  .radio-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 670;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 400px) {
   .radio-section {
@@ -850,13 +889,13 @@ footer .footer-copyright {
   }
   .about-text h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 670;
     line-height: 1;
   }
   .about-text p {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 60;
     line-height: 1;
   }
@@ -880,6 +919,102 @@ footer .footer-copyright {
     font-size: 32px;
     font-weight: 670;
     line-height: 1;
+  }
+}
+@media (max-width: 630px) {
+  .stream-player {
+    background-color: rgb(36, 36, 36);
+    width: 350px;
+    height: auto;
+    padding: 30px 15px;
+    margin: 20px auto 60px auto;
+    border-radius: 8px;
+  }
+  .stream-player .player-progress span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0 8px;
+  }
+  .stream-player .player-progress .progress-bar {
+    margin-top: 5px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 250px;
+  }
+  .stream-player .player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .stream-player .player-controls .btn-prev,
+  .stream-player .player-controls .btn-next,
+  .stream-player .player-controls .btn-repeat,
+  .stream-player .player-controls .btn-shuffle {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .stream-player .player-controls .btn-play-pause {
+    width: 56px;
+    height: 56px;
+  }
+  .stream-player .player-controls .btn-play-pause i {
+    font-size: 28px;
+    margin-left: 3px;
+  }
+}
+@media (max-width: 430px) {
+  .stream-player {
+    padding: 18px 5px;
+    width: 280px;
+    margin: 12px auto 40px auto;
+  }
+  .stream-player .player-progress span {
+    font-size: 13px;
+    margin: 0 4px;
+  }
+  .stream-player .player-progress .progress-bar {
+    max-width: 140px;
+  }
+  .stream-player .player-controls {
+    gap: 8px;
+  }
+  .stream-player .player-controls .btn-prev,
+  .stream-player .player-controls .btn-next,
+  .stream-player .player-controls .btn-repeat,
+  .stream-player .player-controls .btn-shuffle {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .stream-player .player-controls .btn-play-pause {
+    width: 50px;
+    height: 50px;
+  }
+  .stream-player .player-controls .btn-play-pause i {
+    font-size: 22px;
+    margin-left: 1px;
+  }
+}
+@media (max-width: 950px) {
+  .chat-radio-personalizada {
+    margin: 50px 80px 300px 80px;
+  }
+}
+@media (max-width: 565px) {
+  .chat-radio-personalizada {
+    margin: 50px 10px 250px 10px;
   }
 }
 @media (max-width: 768px) {
